@@ -1,0 +1,1 @@
+This is a Next.js project. The porject will use ChatGpt APIs in order to make suggestion.
