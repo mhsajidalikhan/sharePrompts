@@ -495,11 +495,36 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.mb-16{
+  margin-bottom: 4rem;
+}
+.flex{
+  display: flex;
+}
+.hidden{
+  display: none;
+}
 .w-full{
   width: 100%;
 }
 .flex-col{
   flex-direction: column;
+}
+.gap-2{
+  gap: 0.5rem;
+}
+.gap-3{
+  gap: 0.75rem;
+}
+.rounded-full{
+  border-radius: 9999px;
+}
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.pt-3{
+  padding-top: 0.75rem;
 }
 .text-center{
   text-align: center;
@@ -960,4 +985,11 @@ video {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (min-width: 640px){
+
+  .sm\:flex{
+    display: flex;
+  }
 }

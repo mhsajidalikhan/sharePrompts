@@ -6,6 +6,14 @@ import {SignIn, SignOut, userSession, getProviders, signIn, signOut} from 'next-
 
 const Nav = () => {
   const isUserLoggedIn =true;
+  const[providers, setProviders] = useState(null);
+  useEffect(() =>{
+    const setProviders = async () => {
+      const response = await getProviders();
+      setProviders(response);
+    }
+    setProviders();
+  },[]);
   return (
     <nav className='flex-between w-full mb-16 pt-3'>
       <Link href="/" className="flex gap-2 flex-center">
@@ -22,9 +30,22 @@ const Nav = () => {
         <div className="flex gap-3 md:gap5">
           <Link href="/create-prompt" className="black_btn">Create Post</Link>
           <button type="button" onClick={signOut} className="outline_button"> Sign out</button>
+          <Link href="/profile">
+            <Image src="/assets/images/logo.svg" width={37} height={37} className="rounded-full" alt="profile" />
+          </Link>
         </div>
       ):(
         <>
+        {providers && 
+          Object.values(providers).map((provider) => 
+          (
+            <button
+            type="button"
+            key={provider.name}
+            onClick={() => signIn(provider.id)}
+            className="black_btn"
+            >Sign in</button>
+          ))}
         </>
       )}
      </div>
