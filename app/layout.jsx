@@ -4,26 +4,29 @@ import Provider from '@components/Provider';
 
 
 export const metadata = {
-    title: "Share your thoughts", 
+    title: "Share your thoughts",
     description: "Discover and share your AI prompts"
 }
 
-const RootLayout = ({children}) => {
-  return (
-   <html lang='en'>
-    <body>
-        <div className='main'>
-            <div className='gradient'/>
-        </div>
-        <main className='app'>
-            <Nav />
-            {children}
+const RootLayout = ({ children }) => {
+    return (
+        <html lang='en'>
+            <body>
+                <Provider>
+                    <div className='main'>
+                        <div className='gradient' />
+                    </div>
+                    <main className='app'>
+                        <Nav />
+                        {children}
 
-        </main>
-    </body>
+                    </main>
+                </Provider>
 
-   </html>
-  )
+            </body>
+
+        </html>
+    )
 }
 
 export default RootLayout;
