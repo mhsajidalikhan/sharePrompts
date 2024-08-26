@@ -502,17 +502,24 @@ video {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
 }
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .mb-16{
   margin-bottom: 4rem;
-}
-.mt-5{
-  margin-top: 1.25rem;
 }
 .mb-5{
   margin-bottom: 1.25rem;
 }
 .mt-10{
   margin-top: 2.5rem;
+}
+.mt-16{
+  margin-top: 4rem;
+}
+.mt-5{
+  margin-top: 1.25rem;
 }
 .flex{
   display: flex;
@@ -523,17 +530,35 @@ video {
 .w-full{
   width: 100%;
 }
+.max-w-2xl{
+  max-width: 42rem;
+}
 .max-w-full{
   max-width: 100%;
 }
 .max-w-md{
   max-width: 28rem;
 }
-.max-w-2xl{
-  max-width: 42rem;
+.flex-1{
+  flex: 1 1 0%;
+}
+.cursor-pointer{
+  cursor: pointer;
 }
 .flex-col{
   flex-direction: column;
+}
+.items-start{
+  align-items: flex-start;
+}
+.items-center{
+  align-items: center;
+}
+.justify-start{
+  justify-content: flex-start;
+}
+.justify-between{
+  justify-content: space-between;
 }
 .gap-2{
   gap: 0.5rem;
@@ -541,14 +566,24 @@ video {
 .gap-3{
   gap: 0.75rem;
 }
-.gap-7{
-  gap: 1.75rem;
-}
 .gap-4{
   gap: 1rem;
 }
+.gap-5{
+  gap: 1.25rem;
+}
+.gap-7{
+  gap: 1.75rem;
+}
 .rounded-full{
   border-radius: 9999px;
+}
+.border-t{
+  border-top-width: 1px;
+}
+.border-gray-100{
+  --tw-border-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 .bg-primary-orange{
   --tw-bg-opacity: 1;
@@ -579,6 +614,9 @@ video {
 .text-center{
   text-align: center;
 }
+.font-inter{
+  font-family: Inter, sans-serif;
+}
 .font-satoshi{
   font-family: Satoshi, sans-serif;
 }
@@ -590,23 +628,30 @@ video {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.font-semibold{
-  font-weight: 600;
-}
 .font-normal{
   font-weight: 400;
 }
-.text-gray-700{
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+.font-semibold{
+  font-weight: 600;
 }
 .text-gray-500{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
+.text-gray-700{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+.text-gray-900{
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 /* 
